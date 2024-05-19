@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "lWt/MucJPNrY8ykg5jRfEDoujl380O0/Fz6YmaaWltY6gKP6EayFQd41X8VAkQSVJuYjU+rmsJScFEBVjaSoGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jccas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\jccas\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\jccas\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\jccas\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
