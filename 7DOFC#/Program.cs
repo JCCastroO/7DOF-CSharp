@@ -1,4 +1,5 @@
-﻿using _7DOFC_.Services;
+﻿using _7DOFC_.Models;
+using _7DOFC_.Services;
 
 internal class Program
 {
@@ -6,12 +7,11 @@ internal class Program
     {
         API api = new();
         var initialPokemons = api.InitialPokemons;
-        var pokemons = api.Pokemons;
-        Console.WriteLine("Aperte qualquer tecla para visualizar os pokemons cadastrados: ");
         foreach (var initialPokemon in initialPokemons) 
         {
             api.GET(initialPokemon);
-            Console.WriteLine(pokemons[initialPokemon].name);
         }
+        Menus menu = new(api.Pokemons);
+        menu.Start();
     }
 }

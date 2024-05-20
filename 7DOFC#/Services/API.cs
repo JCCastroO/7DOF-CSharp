@@ -27,6 +27,5 @@ internal class API()
         {
             Console.WriteLine(response.ErrorMessage);
         }
-        Console.ReadKey();
     }
 }

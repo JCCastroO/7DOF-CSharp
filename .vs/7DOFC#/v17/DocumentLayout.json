@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\",
+  "WorkspaceRootPath": "D:\\Devs\\Estudo\\7DOFC#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|c:\\users\\jccas\\documents\\devs\\estudo\\7dofc#\\7dofc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|d:\\devs\\estudo\\7dofc#\\7dofc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|solutionrelative:7dofc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|d:\\devs\\estudo\\7dofc#\\7dofc#\\models\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|solutionrelative:7dofc#\\models\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|d:\\devs\\estudo\\7dofc#\\7dofc#\\services\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|solutionrelative:7dofc#\\services\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|d:\\devs\\estudo\\7dofc#\\7dofc#\\interfaces\\ipokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6578A93A-6288-48CB-8C8E-B2319B8F36BC}|7DOFC#\\7DOFC#.csproj|solutionrelative:7dofc#\\interfaces\\ipokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +34,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPokemon.cs",
+              "DocumentMoniker": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Interfaces\\IPokemon.cs",
+              "RelativeDocumentMoniker": "7DOFC#\\Interfaces\\IPokemon.cs",
+              "ToolTip": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Interfaces\\IPokemon.cs",
+              "RelativeToolTip": "7DOFC#\\Interfaces\\IPokemon.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA3wCcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T13:17:05.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "API.cs",
+              "DocumentMoniker": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Services\\API.cs",
+              "RelativeDocumentMoniker": "7DOFC#\\Services\\API.cs",
+              "ToolTip": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Services\\API.cs",
+              "RelativeToolTip": "7DOFC#\\Services\\API.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T12:48:08.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menus.cs",
+              "DocumentMoniker": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Models\\Menus.cs",
+              "RelativeDocumentMoniker": "7DOFC#\\Models\\Menus.cs",
+              "ToolTip": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Models\\Menus.cs",
+              "RelativeToolTip": "7DOFC#\\Models\\Menus.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAmwCoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T12:34:45.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Program.cs",
+              "DocumentMoniker": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Program.cs",
               "RelativeDocumentMoniker": "7DOFC#\\Program.cs",
-              "ToolTip": "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Program.cs",
+              "ToolTip": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\Program.cs",
               "RelativeToolTip": "7DOFC#\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T13:09:17.398Z",
               "EditorCaption": ""

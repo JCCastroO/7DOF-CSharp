@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj": {}
+    "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj": {
+    "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj",
+        "projectUniqueName": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj",
         "projectName": "7DOFC#",
-        "projectPath": "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj",
+        "projectPath": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\7DOFC#.csproj",
         "packagesPath": "C:\\Users\\jccas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jccas\\Documents\\Devs\\Estudo\\7DOFC#\\7DOFC#\\obj\\",
+        "outputPath": "D:\\Devs\\Estudo\\7DOFC#\\7DOFC#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jccas\\AppData\\Roaming\\NuGet\\NuGet.Config",
