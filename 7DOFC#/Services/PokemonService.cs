@@ -1,14 +1,14 @@
-﻿using _7DOFC_.Interfaces;
+﻿using _7DOFC_.Models;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Serializers.Json;
 
 namespace _7DOFC_.Services;
 
-internal class API()
+internal class PokemonService()
 {
     public List<string> InitialPokemons = ["bulbasaur", "charmander", "squirtle"];
-    public Dictionary<string, IPokemon> Pokemons = new();
+    public Dictionary<string, Pokemon> Pokemons = new();
     private RestClientOptions BaseUrl = new RestClientOptions("https://pokeapi.co/api/v2/pokemon/");
 
     public void GET(string endpoint)
@@ -20,7 +20,7 @@ internal class API()
         if (response.StatusCode == System.Net.HttpStatusCode.OK)
         {
 
-            IPokemon pokemon = JsonConvert.DeserializeObject<IPokemon>(response.Content!)!;
+            Pokemon pokemon = JsonConvert.DeserializeObject<Pokemon>(response.Content!)!;
             Pokemons.Add(endpoint, pokemon!);
         }
         else

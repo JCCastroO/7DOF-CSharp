@@ -1,14 +1,15 @@
-﻿using System;
+﻿using _7DOFC_.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _7DOFC_.Interfaces;
+namespace _7DOFC_.Models;
 
-internal class IPokemon
+internal class Pokemon
 {
-    public List<Ability> abilities { get; set; }
+    public List<Abilities> abilities { get; set; }
     public int base_experience { get; set; }
     public object cries { get; set; }
     public List<object> forms { get; set; }
@@ -28,17 +29,4 @@ internal class IPokemon
     public List<object> stats { get; set; }
     public List<object> types { get; set; }
     public int weight { get; set; }
-}
-
-internal class Ability
-{
-    public AbilityStatus ability { get; set; }
-    public bool is_hidden { get; set; }
-    public int slot { get; set; }
-}
-
-internal class AbilityStatus
-{
-    public string name { get; set; }
-    public string url { get; set; }
 }

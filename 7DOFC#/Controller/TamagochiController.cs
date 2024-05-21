@@ -1,17 +1,17 @@
-﻿using _7DOFC_.Interfaces;
+﻿using _7DOFC_.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _7DOFC_.Models;
+namespace _7DOFC_.Controller;
 
-internal class Menus(Dictionary<string, IPokemon> pokemons)
+internal class TamagochiController(Dictionary<string, Pokemon> pokemons)
 {
     public string Player { get; set; } = "";
-    public Dictionary<string, IPokemon> Pokemons = pokemons;
-    public IPokemon? AdoptedPokemon { get; set; }
+    public Dictionary<string, Pokemon> Pokemons = pokemons;
+    public Pokemon? AdoptedPokemon { get; set; }
 
     public void Start()
     {
@@ -95,7 +95,7 @@ internal class Menus(Dictionary<string, IPokemon> pokemons)
         Logo();
         Title(" ADOTAR UM MASCOTE ");
         Console.WriteLine($"{Player} Escolha uma espécie ou tecle ENTER para voltar: ");
-        foreach(KeyValuePair<string, IPokemon> pokemon in Pokemons)
+        foreach(KeyValuePair<string, Pokemon> pokemon in Pokemons)
         {
             Console.WriteLine(pokemon.Key.ToUpper());
         }
@@ -146,7 +146,7 @@ internal class Menus(Dictionary<string, IPokemon> pokemons)
         }
     }
 
-    private void MoreOptions(IPokemon pokemon, string screen)
+    private void MoreOptions(Pokemon pokemon, string screen)
     {
         Title("----------");
         Console.WriteLine($"Nome do Pokemon: {pokemon.name.ToUpper()}");
@@ -172,7 +172,7 @@ internal class Menus(Dictionary<string, IPokemon> pokemons)
         }
     }
 
-    private void Adopted(IPokemon pokemon)
+    private void Adopted(Pokemon pokemon)
     {
         Console.Clear();
         Logo();
