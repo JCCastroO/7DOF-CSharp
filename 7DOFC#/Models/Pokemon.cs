@@ -9,6 +9,8 @@ namespace _7DOFC_.Models;
 
 internal class Pokemon
 {
+    public int? hunger { get; set; }
+    public int? humor { get; set; }
     public List<Abilities> abilities { get; set; }
     public int base_experience { get; set; }
     public object cries { get; set; }

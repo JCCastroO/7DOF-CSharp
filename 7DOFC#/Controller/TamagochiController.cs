@@ -78,7 +78,7 @@ internal class TamagochiController(Dictionary<string, Pokemon> pokemons)
         }
         else if (Pokemons.ContainsKey(choice.ToLower()))
         {
-            MoreOptions(Pokemons[choice.ToLower()], "mascots");
+            MoreOptions(Pokemons[choice.ToLower()]);
         }
         else
         {
@@ -87,6 +87,72 @@ internal class TamagochiController(Dictionary<string, Pokemon> pokemons)
             Back(1500);
             Menu();
         }
+    }
+
+    private void MoreOptions(Pokemon pokemon)
+    {
+        Console.Clear();
+        Logo();
+        Title("----------");
+        Console.WriteLine($"{Player} você deseja: ");
+        Console.WriteLine($"1 - Saber como {pokemon.name.ToUpper()} está");
+        Console.WriteLine($"2 - Alimentar o {pokemon.name.ToUpper()}");
+        Console.WriteLine($"3 - Brincar com {pokemon.name.ToUpper()}");
+        Console.WriteLine($"4 - Voltar");
+        int choise = int.Parse(Console.ReadLine()!);
+        switch (choise)
+        {
+            case 1:
+                Stats(pokemon, "mascots");
+                break;
+            case 2:
+                Feed();
+                break;
+            case 3:
+                play();
+                break;
+            case 4:
+                Back(1000);
+                Mascots();
+                break;
+            default:
+                Console.WriteLine("Escolha inválida!");
+                Back(1500);
+                Menu();
+                break;
+        }
+    }
+
+    private void Feed()
+    {
+        if(AdoptedPokemon.hunger < 10)
+        {
+            AdoptedPokemon.hunger++;
+            Console.WriteLine($"\n{AdoptedPokemon.name} está se alimentando!\n");
+            Thread.Sleep(2500);
+        } else
+        {
+            Console.WriteLine($"\n{AdoptedPokemon.name} já está alimentado!\n");
+            Thread.Sleep(1000);
+        }
+        MoreOptions(AdoptedPokemon);
+    }
+
+    private void play()
+    {
+        if (AdoptedPokemon.humor < 10)
+        {
+            AdoptedPokemon.humor++;
+            AdoptedPokemon.hunger--;
+            Console.WriteLine($"\n{AdoptedPokemon.name} está se divertindo!\n");
+            Thread.Sleep(2500);
+        }
+        else
+        {
+            Console.WriteLine($"\n{AdoptedPokemon.name} já está cansado!\n");
+            Thread.Sleep(1000);
+        }
+        MoreOptions(AdoptedPokemon);
     }
 
     private void Adoption()
@@ -129,7 +195,7 @@ internal class TamagochiController(Dictionary<string, Pokemon> pokemons)
         switch (choise)
         {
             case 1:
-                MoreOptions(Pokemons[pokemon.ToLower()], "options");
+                Stats(Pokemons[pokemon.ToLower()], "options");
                 break;
             case 2:
                 Adopted(Pokemons[pokemon.ToLower()]);
@@ -146,12 +212,32 @@ internal class TamagochiController(Dictionary<string, Pokemon> pokemons)
         }
     }
 
-    private void MoreOptions(Pokemon pokemon, string screen)
+    private void Stats(Pokemon pokemon, string screen)
     {
         Title("----------");
         Console.WriteLine($"Nome do Pokemon: {pokemon.name.ToUpper()}");
         Console.WriteLine($"Altura: {pokemon.height}");
         Console.WriteLine($"Peso: {pokemon.weight}");
+        if(screen == "mascots")
+        {
+            if(pokemon.hunger >= 5)
+            {
+                Console.WriteLine($"{pokemon.name.ToUpper()} está alimentado! [{AdoptedPokemon.hunger}/10]");
+            }
+            else
+            {
+                Console.WriteLine($"{pokemon.name.ToUpper()} está com fome! [{AdoptedPokemon.hunger}/10]");
+            }
+
+            if(pokemon.humor >= 5)
+            {
+                Console.WriteLine($"{pokemon.name.ToUpper()} está feliz! [{AdoptedPokemon.humor}/10]");
+            }
+            else
+            {
+                Console.WriteLine($"{pokemon.name.ToUpper()} está triste! [{AdoptedPokemon.humor}/10]");
+            }
+        }
         Console.WriteLine("Habilidades: ");
         var abilities = pokemon.abilities;
         foreach (var ability in abilities)
@@ -164,7 +250,7 @@ internal class TamagochiController(Dictionary<string, Pokemon> pokemons)
         {
             Options(pokemon.name);
         } else if (screen == "mascots"){
-            Mascots();
+            MoreOptions(AdoptedPokemon);
         }
         else
         {
@@ -177,6 +263,8 @@ internal class TamagochiController(Dictionary<string, Pokemon> pokemons)
         Console.Clear();
         Logo();
         AdoptedPokemon = pokemon;
+        AdoptedPokemon.hunger = 5;
+        AdoptedPokemon.humor = 5;
         Console.WriteLine($"{Player.ToUpper()} VOCÊ ADOTOU UM NOVO POKEMON!!!");
         Back(2000);
         Menu();
